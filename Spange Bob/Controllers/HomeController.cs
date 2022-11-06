@@ -61,5 +61,11 @@ namespace Spange_Bob.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
+        public ActionResult GetMessage()
+        {
+            return PartialView("_GetMessage");
+        }
+        
     }
 }
